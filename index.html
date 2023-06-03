@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+                <link rel="stylesheet" type="text/css" href="color.css">
+
+                <title>Online Examination system</title>
+
+</head>
+<body>
+
+ <nav class="navbar">
+
+<div class="logo">
+<img src="https://cdn.discordapp.com/attachments/1097398594748821549/1098852900857446502/Screenshot_2023-04-21_at_11.36.49_AM-removebg-preview.png">
+</div>
+ <div class="title">
+ <h1>Chitkara University Institute Of Engineering & Technology</h1>
+
+                                                <p>Test Management System</p>
+
+                                </div>
+
+                                <div class="list">
+
+                                                <a href="#">Home</a>
+
+                                                <a href="#">Login</a>
+
+                                                <a href="#">Logout</a>
+
+                                                <a href="team.html">Team</a>
+
+                                </div>
+
+                </nav>
+
+                <div class="main">
+
+                                <h1>Controller Login</h1>
+
+                                Batch<br><br>
+
+                                <input type="text" name="" id="batchInput"><br><br>
+
+                                Subject<br><br>
+
+                                <input type="text" name="" id="subjectInput" placeholder="Programming Language C"><br><br>
+                                
+                                
+
+                                password<br><br>
+
+                                <input type="password" id="passwordInput" name=""><br><br>
+
+                                <button onclick="validateForm()">Login</button><br><br>
+
+                                <a href="#">Forgot Password</a>
+                                
+
+                </div>
+
+                <div class="footer">
+
+                                <div class="t2">
+
+                                                <h2>Chitkara University Institute Of Engineering & Technology</h2>
+
+                                                <p>Rajpura<br></p>
+
+                                </div>
+
+                                <div class="contact">
+
+                                                <p>Phone: 8699365638 <br>
+
+                                                    Email:support@chitkara.edu.in<br>
+
+                                                Web: chitkarau.in</p>
+
+                                </div>
+
+                </div>
+
+                <script>
+                    function validateForm() {
+                      var batch = document.getElementById("batchInput").value;
+                      var subject = document.getElementById("subjectInput").value;
+                      var password = document.getElementById("passwordInput").value;
+                  
+                      if (batch === "") {
+                        alert("Please enter the Batch");
+                        return false;
+                      }
+                  
+                      if (subject === "") {
+                        alert("Please enter the Subject");
+                        return false;
+                      }
+                  
+                      if (password === "") {
+                        alert("Please enter the Password");
+                        return false;
+                      }
+                  
+                      // Perform further validation if needed
+                  
+                      // If all validations pass, redirect to a different website
+                      window.location.href = "./login.html"; // Replace "https://example.com" with the desired URL
+                    }
+                  </script>
+</body>
+<script src="script.js"></script>
+</html>
+
